@@ -4,3 +4,28 @@
     box-sizing: border-box;
     font-family: "sans-serif";
 }
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    gap:5vw
+}
+nav ul {
+    display: flex;
+    gap: 2vw;
+}
+nav li {
+    list-style-type:none;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+nav a:hover {
+    color:white;
+}
+.logo {
+    margin: 5vw;
+}
