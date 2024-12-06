@@ -40,11 +40,12 @@ nav a:hover {
 }
 header {
     min-height: 80vh;
-    background: url(../images/Placeholder.PNG);
+    background: url(../images/starrail.webp) no-repeat center;
+    background-size: cover;
 }
 .gradient {
     height: 5vh;
-    margin-top: 75vh;
+    margin-top: 70vh;
     background: linear-gradient(to top, var(--main-background-color), transparent);
     width: 100%;
     flex-shrink: 0;
@@ -52,6 +53,28 @@ header {
 main {
     min-height: 100vh;
     background-color: var(--main-background-color);
+}
+.about {
+    display: flex;
+    align-items: center;
+    flex: wrap;
+    padding-top: 10vh;
+    justify-content: space-between;
+}
+.about-description {
+    max-width: 50%;
+    min-height: 25vh;
+    color:white;
+    font-weight: lighter;
+    padding:5vw;
+}
+.about-image {
+    min-width: 30%;
+    min-height: 35vh;
+    background: url(../images/starrail.webp) center;
+    border-top-left-radius:10vh;
+    border-bottom-left-radius: 10vh;
+    
 }
 @media (max-width:500px) {
     nav ul {
