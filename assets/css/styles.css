@@ -48,6 +48,7 @@ header {
 .opening-message {
     color: var(--header-color);
     width: 100%;
+    height: 100%;
     text-align: center;
     padding-top:5%;
     font-size: larger;
@@ -97,9 +98,9 @@ main {
     padding: 0 1vw;
 }
 .about-image {
-    width: 30%;
+    width: 50%;
     height: 35vh;
-    background: url('../images/starrail.webp') center/cover no-repeat;
+    background: url('../images/mountain.jpg') center/cover no-repeat;
     border-top-left-radius: 10vh;
     border-bottom-left-radius: 10vh;
 }
@@ -118,8 +119,8 @@ main {
     .about-image {
         width: 100%;
         height: 25vh;
-        border-top-left-radius: 5vh;
-        border-bottom-left-radius: 5vh;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         margin-top: 2vh;
     }
     .about-title {
@@ -147,3 +148,4 @@ main {
         margin-top: 2vh;
     }
 }
+
