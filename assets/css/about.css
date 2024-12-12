@@ -1,0 +1,84 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+    justify-content: space-between;
+}
+.about-description {
+    max-width: 50%;
+    min-height: 25vh;
+    color: var(--main-text-color);
+    font-size: medium;
+    font-weight: lighter;
+    padding: 5vw;
+}
+.about-description > * {
+    margin-bottom: 2vh;
+}
+.about-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    line-height: 0.1em;
+    margin: 1vw 0 2vh;
+    color: var(--header-color);
+}
+.about-title span {
+    background: var(--main-background-color);
+    padding: 0 1vw;
+}
+.about-image {
+    width: 50%;
+    height: 35vh;
+    background: url('../images/mountain.jpg') center/cover no-repeat;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    border:white 2px solid;
+}
+@media (max-width: 768px) {
+    .about-description {
+        max-width: 100%;
+        padding: 2vw;
+    }
+    .about-image {
+        width: 100%;
+        height: 25vh;
+        border-radius: 0;
+        margin-top: 2vh;
+    }
+    .about-title {
+        margin-top:2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-description {
+        padding: 2vw;
+        font-size: small;
+    }
+    .about-image {
+        height: 20vh;
+        border-radius: 5vh;
+        margin-top: 2vh;
+        border-radius: 0;
+    }
+}
+@media (prefers-color-scheme: light) {
+
+    .about-title {
+        color: var(--light-mode-header-color);
+        border-bottom: 1px solid var(--light-mode-text-color);
+    }
+    .about-title span {
+        background-color: var(--light-mode-background-color);
+    }
+    .about-description {
+        color: var(--light-mode-text-color);
+    }
+
+}
+

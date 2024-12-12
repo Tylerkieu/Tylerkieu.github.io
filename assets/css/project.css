@@ -1,0 +1,40 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.project {
+    width: 30%;
+    height: 35vh;
+    background: url(/assets/images/mountain.jpg) center/cover no-repeat;
+    transition: transform 1s;
+    transform-origin: center center;
+    text-align: center;
+    margin: 1vw;
+}
+.project h1 {
+    backdrop-filter: blur(10px);
+    background: rgba(140, 140, 140, 0.3);
+    padding: 2vh;
+}
+.project:hover {
+    transform: scale(1.05);
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .projects, .container {
+        flex-direction: column;
+    }
+    .project {
+        width: 100%;
+        margin-top: 10vh;
+        transform: none;
+    }
+    .project:hover {
+        transform: none;
+    }
+}

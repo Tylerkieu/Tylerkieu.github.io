@@ -83,13 +83,16 @@ header::before {
     font-size: 50%;
     margin: 2vw;
 }
+.opening-message h1 {
+    color: rgb(225, 225, 225);
+}
 .opening-message p::selection {
     background-color: transparent;
-    color: #e5d28d;
+    color: var(--header-color);
 }
 .opening-message h1::selection {
     background-color: transparent;
-    color: #e5d28d;
+    color: var(--header-color);
 }
 .gradient {
     height: 5vh;
@@ -105,43 +108,7 @@ main {
     min-height: 80vh;
     background-color: var(--main-background-color);
 }
-.about {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 10vh;
-    justify-content: space-between;
-}
-.about-description {
-    max-width: 50%;
-    min-height: 25vh;
-    color: var(--main-text-color);
-    font-size: medium;
-    font-weight: lighter;
-    padding: 5vw;
-}
-.about-description > * {
-    margin-bottom: 2vh;
-}
-.about-title {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #ffffff;
-    line-height: 0.1em;
-    margin: 1vw 0 2vh;
-    color: var(--header-color);
-}
-.about-title span {
-    background: var(--main-background-color);
-    padding: 0 1vw;
-}
-.about-image {
-    width: 50%;
-    height: 35vh;
-    background: url('../images/mountain.jpg') center/cover no-repeat;
-    border-top-left-radius: 10vh;
-    border-bottom-left-radius: 10vh;
-}
+
 footer {
     background-color: #111111;
     height: 40vh;
@@ -191,6 +158,13 @@ footer button {
     border-radius: 1vw;
     padding: 1vh;
 }
+i {
+    font-size:1.1vw;
+    transition: 0.5s;
+}
+i:hover {
+    font-size:1.3vw;
+}
 @media (max-width: 768px) {
     .logo {
         margin: 2vw;
@@ -198,19 +172,7 @@ footer button {
     nav ul {
         gap: 1vw;
     }
-    .about-description {
-        max-width: 100%;
-        padding: 2vw;
-    }
-    .about-image {
-        width: 100%;
-        height: 25vh;
-        border-radius: 0;
-        margin-top: 2vh;
-    }
-    .about-title {
-        margin-top:2vh;
-    }
+
 }
 @media (max-width: 480px) {
     nav {
@@ -224,19 +186,6 @@ footer button {
     .logo {
         margin: 1vw;
     }
-    .about {
-        flex-direction: column;
-    }
-    .about-description {
-        padding: 2vw;
-        font-size: small;
-    }
-    .about-image {
-        height: 20vh;
-        border-radius: 5vh;
-        margin-top: 2vh;
-        border-radius: 0;
-    }
     footer {
         font-size: x-small;
     }
@@ -244,16 +193,6 @@ footer button {
 @media (prefers-color-scheme: light) {
     main {
         background-color: var(--light-mode-background-color);
-    }
-    .about-title {
-        color: var(--light-mode-header-color);
-        border-bottom: 1px solid var(--light-mode-text-color);
-    }
-    .about-title span {
-        background-color: var(--light-mode-background-color);
-    }
-    .about-description {
-        color: var(--light-mode-text-color);
     }
     .gradient {
         background: linear-gradient(to top, var(--light-mode-background-color), transparent);
