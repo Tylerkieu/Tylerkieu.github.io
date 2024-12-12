@@ -12,6 +12,7 @@
     --light-mode-text-color: #333333;
     --light-mode-header-color: #cda523cd;
 }
+
 nav {
     display: flex;
     height: 10vh;
@@ -28,19 +29,29 @@ nav li {
     list-style-type: none;
 }
 nav a {
+    font-size: large;
     text-decoration: none;
     color: var(--main-text-color);
     transition: 0.2s ease;
     text-shadow: 1px 1px 0.5px var(--main-background-color);
 }
+nav a::selection {
+    background-color: transparent;
+    color: #a2a2a2;
+}
 nav a:hover {
-    color: black;
+    color: #a2a2a2;
     text-shadow: none;
 }
+
 .logo {
     margin: 5vw;
     color: var(--main-text-color);
     text-shadow: 2px 2px 1px var(--main-background-color);
+}
+.logo ::selection {
+    background-color: transparent;
+    color: #d4d4d4;
 }
 header {
     min-height: 100vh;
@@ -65,12 +76,20 @@ header::before {
     height: 100%;
     text-align: center;
     padding-top:20%;
-    font-size: larger;
+    font-size:xx-large;
     text-shadow: 1vw 1vw 1vw black;
 }
 .opening-message p {
-    font-size: small;
+    font-size: 50%;
     margin: 2vw;
+}
+.opening-message p::selection {
+    background-color: transparent;
+    color: #e5d28d;
+}
+.opening-message h1::selection {
+    background-color: transparent;
+    color: #e5d28d;
 }
 .gradient {
     height: 5vh;
@@ -83,7 +102,7 @@ header::before {
     z-index: 1;
 }
 main {
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: var(--main-background-color);
 }
 .about {
@@ -97,7 +116,7 @@ main {
     max-width: 50%;
     min-height: 25vh;
     color: var(--main-text-color);
-    font-size: small;
+    font-size: medium;
     font-weight: lighter;
     padding: 5vw;
 }
@@ -127,8 +146,9 @@ footer {
     background-color: #111111;
     height: 40vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 5vh;
+    gap: 5vw;
 }
 .links ul{
     list-style-type: none;
@@ -209,7 +229,7 @@ footer button {
     }
     .about-description {
         padding: 2vw;
-        font-size: x-small;
+        font-size: small;
     }
     .about-image {
         height: 20vh;
@@ -240,6 +260,12 @@ footer button {
     }
     header::before {
         background: 0;
+    }
+    footer {
+        background-color: #e0e0e0;
+    }
+    .links a {
+        color:var(--light-mode-text-color)
     }
 }
 
