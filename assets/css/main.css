@@ -222,5 +222,8 @@ i:hover {
     .opening-message, .opening-message h1 {
         color: var(--light-mode-header-color)
     }
+    body {
+        background-color: var(--light-mode-background-color);
+    }
 }
 
