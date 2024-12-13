@@ -7,7 +7,7 @@
     width: 30%;
     height: 35vh;
     background: url(/assets/images/mountain.jpg) center/cover no-repeat;
-    transition: transform 1s;
+    transition: transform 0.2s;
     transform-origin: center center;
     text-align: center;
     margin: 1vw;
@@ -18,7 +18,7 @@
     padding: 2vh;
 }
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .container {
     width: 100%;
@@ -28,13 +28,11 @@
 @media (max-width: 768px) {
     .projects, .container {
         flex-direction: column;
+        align-items: center;
     }
     .project {
-        width: 100%;
-        margin-top: 10vh;
-        transform: none;
-    }
-    .project:hover {
+        width: 90%;
+        margin:5vh 0;
         transform: none;
     }
 }
