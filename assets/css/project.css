@@ -3,21 +3,48 @@
     flex-wrap: wrap;
     align-content: space-around;
 }
-.project {
+.project1 {
     width: 30%;
     height: 35vh;
-    background: url(/assets/images/mountain.jpg) center/cover no-repeat;
+    background: url(/assets/images/project-images/RestaurantProject.png) center/cover no-repeat;
     transition: transform 0.2s;
     transform-origin: center center;
     text-align: center;
     margin: 1vw;
 }
-.project h1 {
-    backdrop-filter: blur(10px);
-    background: rgba(140, 140, 140, 0.3);
-    padding: 2vh;
+.project2 {
+    width: 30%;
+    height: 35vh;
+    background: url(/assets/images/project-images/FoodDeliveryProject.png) center/cover no-repeat;
+    transition: transform 0.2s;
+    transform-origin: center center;
+    text-align: center;
+    margin: 1vw;
 }
-.project:hover {
+.project3 {
+    width: 30%;
+    height: 35vh;
+    background: url(/assets/images/project-images/SwimmingWebsiteProject.jpg) center/cover no-repeat;
+    transition: transform 0.2s;
+    transform-origin: center center;
+    text-align: center;
+    margin: 1vw;
+}
+.project4 {
+    width: 30%;
+    height: 35vh;
+    background: url(/assets/images/project-images/ChiropractorWebsiteProject.jpg) center/cover no-repeat;
+    transition: transform 0.2s;
+    transform-origin: center center;
+    text-align: center;
+    margin: 1vw;
+}
+.project1 h1, .project2 h1, .project3 h1, .project4 h1 {
+    backdrop-filter: blur(5px);
+    background: rgba(140, 140, 140, 0.3);
+    padding: 1vh;
+}
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
     transform: scale(1.1);
 }
 .container {
@@ -30,7 +57,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .project {
+    .project1, .project2, .project3, .project4 {
         width: 90%;
         margin:5vh 0;
         transform: none;
